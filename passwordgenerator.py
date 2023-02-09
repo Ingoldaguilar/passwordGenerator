@@ -1,5 +1,3 @@
-# imports
-
 """"
 Falta:
 Hacer funcion para generar letras, numeros, signos
@@ -8,13 +6,15 @@ Hacer que se llamen aleatoriamente las funciones de letras, numeros y signos ale
 Crearle una interfaz grafica
 """
 
+# imports
 import random
-import os
+import os 
+
 
 letters = ['a','b','c','d','e','f','g','h','i','j','k','m','n','l','o','p','q','r','s','t','u','v','w','x','y','z']
 
 def randLetter():
-    pos = random.randint(1,25)
+    pos = random.randint(1,25) # cambiar 25 por len(letters)
     return letters[pos]
 
 password = []
